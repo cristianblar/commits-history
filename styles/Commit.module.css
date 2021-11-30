@@ -1,0 +1,45 @@
+.commit__container {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 2px 4px 6px 2px rgb(0 0 0 / 40%);
+  cursor: pointer;
+  margin-bottom: 24px;
+  padding: 12px 14px;
+  transition: opacity 300ms;
+  will-change: opacity;
+  min-width: 540px;
+}
+.commit__container:hover {
+  opacity: 0.6;
+}
+
+.commit__container h5 {
+  color: rgba(48, 16, 100, 0.9);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.commit__container p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 12px;
+}
+
+.container__title_container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.container__title_container h3 {
+  color: rgba(29, 177, 49, 0.8);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.container__title_container span {
+  color: rgba(48, 16, 100, 0.9);
+  font-size: 1.6rem;
+  font-weight: 300;
+}
