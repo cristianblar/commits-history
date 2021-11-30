@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Commit from '../components/Commit'
+import Footer from '../components/Footer'
 
 export async function getServerSideProps() {
   const res = await fetch(
@@ -53,6 +54,9 @@ export default function Home({ commitsArray }) {
           />
         ))}
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
