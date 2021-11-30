@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export async function getServerSideProps() {
@@ -21,7 +20,9 @@ export async function getServerSideProps() {
   }
 }
 
-export default function Home() {
+export default function Home({ commitsArray }) {
+  console.log(commitsArray)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -31,6 +32,10 @@ export default function Home() {
           content='The commit history of its own repository'
         />
         <link rel='icon' href='/happy-cris.ico' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap'
+          rel='stylesheet'
+        />
       </Head>
     </div>
   )
