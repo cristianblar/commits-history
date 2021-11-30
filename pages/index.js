@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
+import Commit from '../components/Commit'
 
 export async function getServerSideProps() {
   const res = await fetch(
@@ -39,6 +40,19 @@ export default function Home({ commitsArray }) {
       <header>
         <Header />
       </header>
+      <main>
+        {commitsArray.map(commit => (
+          <Commit
+            key={commit.sha}
+            sha={commit.sha}
+            authorName={commit.commit.author.name}
+            authorEmail={commit.commit.author.email}
+            date={commit.commit.author.date}
+            message={commit.commit.message}
+            commitUrl={commit.url}
+          />
+        ))}
+      </main>
     </div>
   )
 }
