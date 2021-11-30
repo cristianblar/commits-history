@@ -1,0 +1,15 @@
+.header__container {
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 24px;
+  padding-top: 12px;
+  width: 92%;
+}
+
+.header__container h1 {
+  color: rgb(29, 177, 49);
+  font-size: 5rem;
+  font-weight: bold;
+}

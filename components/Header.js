@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import styles from '../styles/Header.module.css'
 
 export default function Header() {
   return (
-    <div>
+    <div className={styles.header__container}>
       <Image
         src='/happy_cris.png'
         alt='Happy Cris Memoji'
