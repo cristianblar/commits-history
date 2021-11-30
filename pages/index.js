@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Header from '../components/Header'
 
 export async function getServerSideProps() {
   const res = await fetch(
@@ -35,6 +36,9 @@ export default function Home({ commitsArray }) {
           rel='stylesheet'
         />
       </Head>
+      <header>
+        <Header />
+      </header>
     </div>
   )
 }
