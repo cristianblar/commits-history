@@ -1,0 +1,17 @@
+.footer__container {
+  align-items: center;
+  display: flex;
+  font-size: 4rem;
+  justify-content: space-evenly;
+  padding: 12px 0;
+}
+
+.footer__container a {
+  color: rgba(48, 16, 100, 0.9);
+  transition: opacity 300ms;
+  will-change: opacity;
+}
+
+.footer__container a:hover {
+  opacity: 0.7;
+}
