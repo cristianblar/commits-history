@@ -50,7 +50,7 @@ export default function Home({ commitsArray }) {
             authorEmail={commit.commit.author.email}
             date={commit.commit.author.date}
             message={commit.commit.message}
-            commitUrl={commit.url}
+            commitUrl={commit.html_url}
           />
         ))}
       </main>
